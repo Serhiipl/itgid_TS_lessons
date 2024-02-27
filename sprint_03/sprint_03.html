@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sprint 02. TypeScript - itgid.info</title>
+    <meta name="author" content="itgid.info" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/night.css"> -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://itgid.info/favicon.svg"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="one-column">
+          <h1>TypeScript. Sprint 03</h1>
+          <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+          <p>Для применения темы "ночь" удалите комментарий с night.css.</p>
+          <p>
+            Условие: везде где не сказано о способе задания типа данных - тип
+            задается явно.
+          </p>
+
+          <section>
+            <h3>Task 01</h3>
+            <p>
+              По нажатию кнопки .b-1 запускается функция f01. Функция должна
+              присвоить переменной s_1 введенный в input.i-1 текст. Тип
+              переменной s_1 задайте самостоятельно. Для проверки выведите s_1 в
+              консоль.
+            </p>
+
+            <div><input type="text" class="i-1" /></div>
+
+            <div><button class="button-primary b-1">button b-1</button></div>
+          </section>
+
+          <section>
+            <h3>Task 02</h3>
+            <p>
+              По нажатию кнопки .b-2 запускается функция f02. Функция должна
+              присвоить переменной res_2 ЧИСЛО введенное в input.i-2. Тип
+              переменной res_2 задайте самостоятельно. Для проверки выведите
+              res_2 в консоль.
+            </p>
+
+            <div><input type="number" class="i-2" value="77" /></div>
+
+            <div><button class="button-primary b-2">button b-2</button></div>
+          </section>
+
+          <section>
+            <h3>Task 03</h3>
+            <p>
+              Созданы две переменные n_31 и n_31. Напишите функцию f03, которая
+              присваивает в переменную max_3 большее из данных двух переменных
+              значение. Для проверки выведите max в консоль.
+            </p>
+
+            <div><button class="button-primary b-3">button b-3</button></div>
+          </section>
+
+          <section>
+            <h3>Task 04</h3>
+            <p>
+              Напишите функцию, f04, которая получает два ЧИСЛА из input.i-41 и
+              input.i-41 и меньшее присваивает в переменную min_4. Тип данных
+              min_4 определите самостоятельно. Для проверки выведите min_4 в
+              консоль.
+            </p>
+
+            <div><input type="number" class="i-41" value="77" /></div>
+
+            <div><input type="number" class="i-42" value="27" /></div>
+
+            <div><button class="button-primary b-4">button b-4</button></div>
+          </section>
+
+          <section>
+            <h3>Task 05</h3>
+            <p>
+              Напишите функцию, f05, которая проверяет что в input.i-51 и
+              input.i-52 введены числа и при положительном результате проверки в
+              переменную sum_5 кладет результат - сумму данных чисел, при
+              отрицательном результате в переменную error_5 (начальное значение
+              всегда false) кладется значение true. Типы данных определите
+              самостоятельно. Выведите переменные в консоль.
+            </p>
+
+            <div><input type="text" class="i-51" value="23" /></div>
+
+            <div><input type="text" class="i-52" value="17" /></div>
+
+            <div><button class="button-primary b-5">button b-5</button></div>
+          </section>
+
+          <section>
+            <h3>Task 06</h3>
+            <p>
+              Напишите функцию, f06, что проверяет что в input.i-61 и input.i-62
+              введены строки, которые можно привести к числам. При положительном
+              результате проверки в переменную sum_6 кладет результат - сумму
+              данных чисел, а в переменную error_6 кладем false, при
+              отрицательном результате в переменную error_6 кладется значение
+              true, а в переменную sum_6 кладем 0. Типы данных определите
+              самостоятельно. Переменную sum_6 выведите в .out-6. Переменную
+              error_6 в консоль.
+            </p>
+
+            <div><input type="text" class="i-61" value="23" /></div>
+
+            <div><input type="text" class="i-62" value="17b" /></div>
+
+            <div><button class="button-primary b-6">button b-6</button></div>
+
+            <div class="out out-6"></div>
+          </section>
+
+          <section>
+            <h3>Task 07</h3>
+            <p>
+              Функция f07 получает строки из input.i-71 и input.i-72. В
+              переменную max_7 функция должна записать большую из двух строк.
+              Прямым сравнением. Тип переменной max_7 задайте самостоятельно.
+              Выведите переменную max_7 в .out-7.
+            </p>
+
+            <div><input type="text" class="i-71" value="9" /></div>
+
+            <div><input type="text" class="i-72" value="17b" /></div>
+
+            <div><button class="button-primary b-7">button b-7</button></div>
+
+            <div class="out out-7"></div>
+          </section>
+
+          <section>
+            <h3>Task 08</h3>
+            <p>
+              Функция f08 должна прочитать выбранное value из select.s-8 и
+              записать значение в переменную val_8. Тип val_8 определите
+              самостоятельно. Выведите val_8 в .out-8.
+            </p>
+
+            <div>
+              <select class="s-8">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+              </select>
+            </div>
+
+            <div><button class="button-primary b-8">button b-8</button></div>
+
+            <div class="out out-8"></div>
+          </section>
+
+          <section>
+            <h3>Task 09</h3>
+            <p>
+              Создайте переменную val_9 и пропишите ей любое целое число от 2 до
+              6. Тип данных задайте самостоятельно. Напишите функцию f09,
+              которая будучи запущена сделает option внутри select.s-9 с таким
+              value selected. Значение val_9 выводите в .out-9.
+            </p>
+
+            <div>
+              <select class="s-9">
+                <option value="2">two</option>
+                <option value="3">three</option>
+                <option value="4">four</option>
+                <option value="5">five</option>
+                <option value="6">six</option>
+              </select>
+            </div>
+
+            <div><button class="button-primary b-9">button b-9</button></div>
+
+            <div class="out out-9"></div>
+          </section>
+
+          <section>
+            <h3>Task 10</h3>
+            <p>
+              Создайте переменную res_10 тип boolean, значение false. При
+              изменении состояния checkbox.ch-10 изменяйте содержимое переменной
+              res_10. Если checkbox выбран записывайте true, если нет - false.
+              Выводите res_10 в .out-10.
+            </p>
+
+            <div>
+              <label
+                ><input type="checkbox" class="ch-10" /> checkbox ch-10</label
+              >
+            </div>
+
+            <div class="out out-10"></div>
+          </section>
+
+          <section>
+            <h3>Task 11</h3>
+            <p>
+              Создайте переменную res_11 тип number значение 0. При изменении
+              состояния checkbox.ch-11 изменяйте содержимое переменной res_11.
+              Если checkbox выбран записывайте в res_11 значение value, если нет
+              - 0. Выводите res_11 в .out-11.
+            </p>
+
+            <div>
+              <label>
+                <input type="checkbox" class="ch-11" value="100" /> checkbox
+                ch-11
+              </label>
+            </div>
+
+            <div class="out out-11"></div>
+          </section>
+
+          <section>
+            <h3>Task 12</h3>
+            <p>
+              Создайте переменную res_12 тип number значение 0. При нажатии
+              кнопки .b-12 функция должна читать содержимое переменной res_12 и
+              если она равна 1 то делать checkbox.ch-12 состояние checked, если
+              равна нулю сбрасывать состояние checked.
+            </p>
+
+            <div>
+              <label>
+                <input type="checkbox" class="ch-12" /> checkbox ch-12
+              </label>
+            </div>
+
+            <div><button class="button-primary b-12">button b-12</button></div>
+          </section>
+
+          <section>
+            <h3>Task 13</h3>
+            <p>
+              Функция f13 получает из input.i-13 число и выводит в .out-13
+              строку вида 43210 т.е. от введенного числа до нуля. Если ввели 5,
+              то вывод должен быть 543210.
+            </p>
+
+            <div><input type="number" class="i-13" value="3" /></div>
+
+            <div><button class="button-primary b-13">button b-13</button></div>
+
+            <div class="out out-13"></div>
+          </section>
+
+          <section>
+            <h3>Task 14</h3>
+            <p>
+              Функция f14 получает из input.i-14 число и присваивает переменной
+              res_14 true если введенное число является четным, false если не
+              четным. Переменную res_14 выведите в .out-14.
+            </p>
+
+            <div><input type="number" class="i-14" value="3" /></div>
+
+            <div><button class="button-primary b-14">button b-14</button></div>
+
+            <div class="out out-14"></div>
+          </section>
+
+          <section>
+            <h3>Task 15</h3>
+            <p>
+              Создайте переменную s_15 со значением'cdcdbdcsd'. И переменную
+              res_15. Функция должна считать сколько в переменной s_15 символов
+              'c'. Количество присваивать в переменную res_15. Функция должна
+              выводить s_15 в .out-151 и res_15 в .out-152.
+            </p>
+
+            <div><button class="button-primary b-15">button b-15</button></div>
+
+            <div class="out out-151"></div>
+            <div class="out out-152"></div>
+          </section>
+
+          <section>
+            <h3>Task 16</h3>
+            <p>
+              Создан элемент input.i-16. При вводе символов в него выводите
+              количество введенных символов в переменную res_16. Выводите
+              переменную res_16 в .out-16.
+            </p>
+
+            <div><input type="text" class="i-16" /></div>
+
+            <div class="out out-16"></div>
+          </section>
+
+          <section>
+            <h3>Task 17</h3>
+            <p>
+              Создайте переменную res_17 тип boolean значение false. Создан
+              элемент input.i-17. Функция при нажатии кнопки читает содержимое
+              res_17 и если значение false то делает input.i-17 disabled. Если
+              true - enabled.
+            </p>
+
+            <div><input type="text" class="i-17" value="hello" /></div>
+
+            <div><button class="button-primary b-17">button b-17</button></div>
+          </section>
+
+          <section>
+            <h3>Task 18</h3>
+            <p>
+              Создайте строку переменную s_18 равную '10000'. Создайте
+              переменную count_18 равную 0. При нажатии кнопки .b-18 запускается
+              функция f18. Функция прибавляет единицу к count_18, а потом
+              s_18[count_18] делает равной единице. Остальные символы строки 0.
+            </p>
+            <ul>
+              <li>Т.е. когда count = 0 строка выглядит '10000'</li>
+              <li>Т.е. когда count = 1 строка выглядит '010000'</li>
+              <li>Т.е. когда count = 2 строка выглядит '001000'</li>
+              <li>Т.е. когда count = 3 строка выглядит '000100'</li>
+              <li>Т.е. когда count = 4 строка выглядит '000010'</li>
+              <li>Т.е. когда count = 5 строка выглядит '000001'</li>
+              <li>Выведите count_18 в .out-181 и s_18 в .out-182</li>
+            </ul>
+
+            <div>
+              <button class="button-primary b-18">button b-18</button>
+            </div>
+
+            <div class="out out-181"></div>
+
+            <div class="out out-182"></div>
+          </section>
+
+          <section>
+            <h3>Task 19</h3>
+            <p>
+              Создайте с помощью цикла строку s_19 в которой идет ряд
+              5_x_3_x_1_x_. Т.е. пользователь вводит число, например 5, а
+              функция генерирует строку от 5 до 0 и заменяет четные числа на x.
+              Разделитель подчеркивание. Число функция берет из input.i-19.
+              Выведите строку в .out-19.
+            </p>
+
+            <div><input type="text" class="i-19" value="5" /></div>
+
+            <button class="button-primary b-19">button b-19</button>
+
+            <div class="out out-19"></div>
+          </section>
+
+          <section>
+            <h3>Task 20</h3>
+            <p>
+              С Создайте переменную s_20 куда положите значение нуль. При
+              нажатии кнопки запускается функция f20, которая получает число с
+              .i-20 и считает сумму ряда чисел от введеного до нуля. Например
+              введено 5, искомая сумма 5 + 4 + 3 + 2 + 1. Сумма присваивается в
+              s_20. Выведите s_20 в .out-20.
+            </p>
+
+            <div><input type="text" class="i-20" value="5" /></div>
+
+            <button class="button-primary b-20">button b-20</button>
+
+            <div class="out out-20"></div>
+          </section>
+        </div>
+
+        <div class="one-column">
+          <footer>
+            <p>Курсы Itgid.info</p>
+            <p>
+              <a href="https://itgid.info/ru/course/js20">javascript 2.0</a> |
+              <a href="https://itgid.info/ru/course/arraymethod"
+                >Методы массивов JavaScript</a
+              >
+              |
+              <a href="https://itgid.info/ru/course/function-2021"
+                >Функции JavaScript</a
+              >
+              | <a href="https://itgid.info/ru/course/reactjs">ReactJS</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javascript/sprint_03.js"></script>
+  </body>
+</html>

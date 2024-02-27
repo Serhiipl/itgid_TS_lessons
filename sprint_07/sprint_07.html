@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sprint 07. TypeScript - enum</title>
+  <meta name="author" content="itgid.info">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/night.css"> -->
+  <link rel="icon" type="image/svg+xml" href="https://itgid.info/favicon.svg">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-column">
+        <h1>TypeScript. Sprint 07</h1>
+        <h2>Enum TypeScript</h2>
+        <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+        <p>Для применения темы "ночь" удалите комментарий с night.css. </p>
+        <p>Условие: везде где не сказано о способе задания типа данных - тип задается явно.</p>
+
+        <section>
+          <h3>Task 01</h3>
+          <p>Создайте enum с именем WebExt содержащий расширения файлов для изображений в веб - PNG, JPEG, GIF, WEBP.
+            Расширения писать в верхнем регистре. Числовые значения для расширений не вводить. Выведите в консоль для
+            проверки.</p>
+        </section>
+
+        <section>
+          <h3>Task 02</h3>
+          <p>Создайте enum с именем Days, содержащий названия дней недели: Monday, Tuesday, Wednesday, Thursday, Friday,
+            Saturday, Sunday. При этом Monday соответствует число 1, Tuesday число 2 и т.д. Выведите в консоль.</p>
+        </section>
+
+        <section>
+          <h3>Task 03</h3>
+          <p>Создайте enum с именем CardinalPoints содержащий стороны света: north, south, east, west. Для каждой
+            стороны задайте число north - 12, east - 3, south - 6, west - 9. Выведите в консоль.</p>
+        </section>
+
+        <section>
+          <h3>Task 04</h3>
+          <p>Создан enums Data_04. Напишите функцию f04, которая получает keys из Data_04 с помощью Object.keys и
+            выводит в .out-4 через пробел. Числовые данные должны быть отфильтрованы.</p>
+          <div><button class="button-primary b-4">button b-4</button></div>
+          <div class="out out-4"></div>
+        </section>
+
+        <section>
+          <h3>Task 05</h3>
+          <p>Создан enum Wolves. Напишите функцию f05, которая возвращает текстовые характеристики волка в виде массива.
+          </p>
+          <div><button class="button-primary b-5">button b-5</button></div>
+        </section>
+
+        <section>
+          <h3>Task 06</h3>
+          <p>Создан enum TrafficLight, напишите функцию, которая возвращает сокращенное название цветов в виде массива.
+          </p>
+          <div><button class="button-primary b-6">button b-6</button></div>
+        </section>
+
+        <section>
+          <h3>Task 07</h3>
+          <p>Создайте enum с названием TsTypes, где перечисляются типы данных: number, string, boolean и им
+            соответствуют сокращения num, str, bool. Выведите в консоль.</p>
+        </section>
+
+        <section>
+          <h3>Task 08</h3>
+          <p>Создайте enum Time которая содержит перечисление hr, min, sec, AM, PM и соответствующее им значения hour,
+            minute, second, Ante Meridiem, Post Meridiem. Выведите в консоль.</p>
+        </section>
+
+
+        <section>
+          <h3>Task 09</h3>
+          <p>Создайте функцию, которая принимает аргумент типа TsTypes, и возвращает, если number - число 1, если string
+            то строку '1', если boolean то true. Тип данных функции укажите самостоятельно.</p>
+
+          <div><button class="button-primary b-9">button b-9</button></div>
+        </section>
+
+        <section>
+          <h3>Task 10</h3>
+          <p>Создайте enum Roles, содержащий ключи admin со значением 1, writer со значением 5, и user со значением 10.
+            Напишите функцию f10, которая может принимать аргумент - тип Roles и если переданная роль admin или writer
+            то возвращает true, в противном случае - false.</p>
+
+          <div><button class="button-primary b-10">button b-10</button></div>
+        </section>
+
+      </div>
+
+      <div class="one-column">
+        <footer>
+          <p>Курсы Itgid.info</p>
+          <p><a href="https://itgid.info/ru/course/js20">javascript 2.0</a> | <a
+              href="https://itgid.info/ru/course/arraymethod">Методы массивов JavaScript</a> | <a
+              href="https://itgid.info/ru/course/function-2021">Функции JavaScript</a> | <a
+              href="https://itgid.info/ru/course/reactjs">ReactJS</a></p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javascript/sprint_07.js"></script>
+</body>
+
+</html>

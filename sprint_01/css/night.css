@@ -1,0 +1,10 @@
+* {
+    background: #3a3a3a;;
+    color: #eaeaea;;
+}
+
+.out, .in {
+    background: #7e7e7e;
+    border: 1px solid #5f5f5f;
+    color: #fff;
+}

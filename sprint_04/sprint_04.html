@@ -1,0 +1,290 @@
+~<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sprint 04. TypeScript - itgid.info</title>
+    <meta name="author" content="itgid.info" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/night.css"> -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://itgid.info/favicon.svg"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="one-column">
+          <h1>TypeScript. Sprint 04</h1>
+          <h2>Функции в TypeScript</h2>
+          <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+          <p>Для применения темы "ночь" удалите комментарий с night.css.</p>
+          <p>
+            Условие: везде где не сказано о способе задания типа данных - тип
+            задается явно.
+          </p>
+
+          <section>
+            <h3>Task 01</h3>
+            <p>
+              В TS можно применять простые функции. Но не интересно. Пример
+              функции - аналога того что мы писали в JS. Запустите, посмотрите
+              результат. Обратите внимание, функция будет продолжать работу при
+              return '4', return false. Т.е. никакого контроля за типами данных
+              нет.
+            </p>
+          </section>
+
+          <section>
+            <h3>Task 02</h3>
+            <p>
+              В TS логичнее применять контроль того, что возвращает функция.
+              Т.е. указывать тип данных. Посмотрите на пример. Запустите. Теперь
+              замените return 44 на return '44'. Код не компилируется и выдаст
+              ошибку. Верните return 44. Контролировать тип данных, который
+              возвращает функция - наиболее корректный подход в TS.
+            </p>
+          </section>
+
+          <section>
+            <h3>Task 03</h3>
+            <p>
+              Если функция в TS выступает как обертка для группировки действий и
+              не предполагает возвращать значение, то просто напишите: void. Во
+              многих языках программирования такие функции называют процедуры.
+              Обратите внимание, если после этого вы решите дописать в процедуру
+              return, то компилятор выдаст ошибку. Напишите return 55; и
+              проверьте. После чего закомментируйте return 55.
+            </p>
+          </section>
+
+          <section>
+            <h3>Task 04</h3>
+            <p>
+              Напишите функцию, которая возвращает случайное целое число от 0 до
+              100. Результат выведите в .out-4. Тип данных функции укажите
+              соответствующий заданию.
+            </p>
+            <div><button class="b-4 button-primary">button 4</button></div>
+            <div class="out-4 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 05</h3>
+            <p>
+              Напишите функцию f05 тип string, которая возвращает случайный
+              символ строки s5. Случайный символ выведите в .out-5.
+            </p>
+            <div><button class="b-5 button-primary">button 5</button></div>
+            <div class="out-5 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 06</h3>
+            <p>
+              Напишите функцию f06, которая возвращает максимальное из трех
+              чисел n61, n62, n63. Тип данных функции укажите явно.
+            </p>
+            <div><button class="b-6 button-primary">button 6</button></div>
+            <div class="out-6 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 07</h3>
+            <p>
+              Напишите процедуру f07, которая выводит случайное целое число от
+              150 до 170 в .out-7.
+            </p>
+            <div><button class="b-7 button-primary">button 7</button></div>
+            <div class="out-7 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 08</h3>
+            <p>
+              В TS аргументы функции могут иметь заданные типы данных. Это
+              упрощает написание кода и снижает количество ошибок в коде.
+              Изучите код. Попробуйте передать не (5, 6) а ('5', 6). Изучите
+              ошибку компиляции и верните (5,6) аргументы.
+            </p>
+          </section>
+
+          <section>
+            <h3>Task 09</h3>
+            <p>
+              В TS, в отличие от JS проводится контроль числа аргументов. Т.е.
+              если в JS передать большее число аргументов чем положено, то
+              ошибки не будет. А вот в TS так делать нельзя. Удалите комментарий
+              со строки запуска и посмотрите как поведет себя компилятор. После
+              - верните комментарий.
+            </p>
+          </section>
+
+          <section>
+            <h3>Task 10</h3>
+            <p>
+              Напишите функцию f10, которая принимает 4 числа и возвращает
+              меньшее из них. Тип данных функции, аргументы и типы аргументов
+              укажите самостоятельно.
+            </p>
+            <div><button class="b-10 button-primary">button 10</button></div>
+            <div class="out-10 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 11</h3>
+            <p>
+              Напишите функцию, которая принимает два аргумента и возвращает
+              целое случайное число от первого аргумента включительно до второго
+              аргумента включительно. Тип функции и аргументов задайте
+              самостоятельно.
+            </p>
+            <div><button class="b-11 button-primary">button 11</button></div>
+            <div class="out-11 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 12</h3>
+            <p>
+              Напишите функцию проверку пароля. Функция принимает строку. Если
+              пароль меньше или равен 8 символов, то функция возвращает false,
+              если больше to возвращает true. Пароль должен содержать минимум
+              один символ в верхнем регистре. Тип данных функции, аргументы и
+              типы аргументов укажите самостоятельно.
+            </p>
+            <div><button class="b-12 button-primary">button 12</button></div>
+            <div class="out-12 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 13</h3>
+            <p>
+              В некоторых случаях функции мало одного значения. Например, если у
+              вас в функции нужно делать проверки. Давайте усложним предыдущую
+              задачу - пользователь вводит пароль. Если длина пароля меньше или
+              равна восемь символов, то функция возвращает false. Если больше -
+              то сам пароль. Т.е. формально теперь функция может возвращать и
+              string и boolean. Разберите пример.
+            </p>
+            <div><button class="b-13 button-primary">button 13</button></div>
+            <div class="out-13 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 14</h3>
+            <p>
+              Давайте напишем теперь классическую функцию. Функция возвращает
+              результат деления первого числа на второе. Однако добавим
+              проверку. Если второй аргумент равен нулю - то возвращается false.
+              Типы функции и аргументов напишите самостоятельно.
+            </p>
+            <div><button class="b-14 button-primary">button 14</button></div>
+            <div class="out-14 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 15</h3>
+            <p>
+              Теперь давайте раскроем потенциал такого подхода - посмотрим что
+              могут дать функции с двумя типами данных. Вернемся к задаче
+              пароля. Рассмотрите функцию и проанализируйте ее работу.
+              Попробуйте передать пароль 'RickSanchez' и 'Rick'.
+            </p>
+            <div><button class="b-15 button-primary">button 15</button></div>
+            <div class="out-15 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 16</h3>
+            <p>
+              Напишите функцию, которая может возвращать или boolean или число.
+              Функция принимает строку, и если эту строку можно преобразовать к
+              числу, то возвращает число, если нет - false.
+            </p>
+            <div><button class="b-16 button-primary">button 16</button></div>
+            <div class="out-16 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 17</h3>
+            <p>
+              Напишите функцию, которая принимает имя класса как строку, и
+              возвращает текст из элемента DOM с таким классом. Текст должен
+              быть очищен от пробелов по краям строки. Если такого элемента нет
+              - возвращает false. Типы функции и аргументов напишите
+              самостоятельно.
+            </p>
+
+            <div><button class="b-17 button-primary">button 17</button></div>
+            <p class="p-17">Night Family</p>
+            <div class="out-17 out"></div>
+          </section>
+
+          <section>
+            <h3>Task 18</h3>
+            <p>
+              В функцию можно передавать необязательные параметры. Изучите как
+              работает функция f18.
+            </p>
+
+            <div><button class="b-18 button-primary">button 18</button></div>
+          </section>
+
+          <section>
+            <h3>Task 19</h3>
+            <p>
+              Напишите функцию, которая принимает 2 необязательных аргумента -
+              строки и возвращает большую по длине строку. Если передан один
+              аргумент - возвращает его. Если аргументы не переданы - возвращает
+              пустую строку. Типы функции и аргументов напишите самостоятельно.
+            </p>
+            <div><button class="b-19 button-primary">button 19</button></div>
+          </section>
+
+          <section>
+            <h3>Task 20</h3>
+            <p>
+              Напишите функцию, которая принимает два необязательных аргумента -
+              числа. И если они заданы генерирует и возвращает случайное целое в
+              указанном диапазоне, а если не указаны - возвращает случайное
+              целое число от 0 до 100.
+            </p>
+            <div><button class="b-20 button-primary">button 20</button></div>
+            <div class="out out-20"></div>
+          </section>
+        </div>
+
+        <div class="one-column">
+          <footer>
+            <p>Курсы Itgid.info</p>
+            <p>
+              <a href="https://itgid.info/ru/course/js20">javascript 2.0</a> |
+              <a href="https://itgid.info/ru/course/arraymethod"
+                >Методы массивов JavaScript</a
+              >
+              |
+              <a href="https://itgid.info/ru/course/function-2021"
+                >Функции JavaScript</a
+              >
+              | <a href="https://itgid.info/ru/course/reactjs">ReactJS</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javascript/sprint_04.js"></script>
+  </body>
+</html>
