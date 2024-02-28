@@ -155,10 +155,15 @@ console.log(obj_11.showCount());
 // а вот protected позволяет в классе наследнике манипулировать protected напрямую.
 // Task 12
 // Создайте класс Test_12, содержащий свойство public n число равное нулю. Создайте метод rand, private, который присваивает свойству n случайное число от 0 до 100. Запускайте данный метод в конструкторе.
-// тут пишем класс
+class Test_12 {
+    n = 0;
+    rand() {
+        return (this.n = Math.floor(Math.random() * 101));
+    }
+}
 // Для проверки кода снимите комментарий ниже
-// const obj_12 = new Test_12();
-// console.log(obj_12.n);
+const obj_12 = new Test_12();
+console.log(obj_12.n);
 // а вот такой запуск выдаст ошибку
 // obj_12.rand();
 // Task 13
@@ -184,14 +189,29 @@ class Test_14 {
         this.rand();
     }
 }
-// тут пишем класс
+class Test_141 extends Test_14 {
+    test() {
+        this.rand();
+        return this.n;
+    }
+}
 // Для проверки кода снимите комментарий ниже
-// const obj_14 = new Test_141();
-// console.log(obj_14.test());
+const obj_14 = new Test_141();
+console.log(obj_14.test());
 // Task 15
 // Создайте класс Test_15 содержащий свойства private num1 и protected num2. С помощью конструктора заполните данные числа. Напишите метод isBig() возвращающий большее из двух чисел.
-// тут пишем класс
+class Test_15 {
+    num1;
+    num2;
+    constructor(a, b) {
+        this.num1 = a;
+        this.num2 = b;
+    }
+    isBig() {
+        return Math.max(this.num1, this.num2);
+    }
+}
 // Для проверки кода снимите комментарий ниже
-// const obj_15 = new Test_15(22, 17);
-// console.log(obj_15.isBig());
+const obj_15 = new Test_15(22, 17);
+console.log(obj_15.isBig());
 //# sourceMappingURL=sprint_11.js.map
