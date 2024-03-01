@@ -145,7 +145,7 @@ console.log(user_01);
 // Создайте класс U_02, который наследуется от U_01. Допишите метод prepare(), который получает аргумент s (строку), обрезает пробелы и переводит текст в нижний регистр, возвращая результат.
 class U_02 extends U_01 {
     prepare(s) {
-        return (this.username = this.username.trim().toLowerCase());
+        return (s = s.trim().toLowerCase());
     }
 }
 // Для проверки кода снимите комментарий ниже

@@ -181,7 +181,7 @@ console.log(user_01);
 
 class U_02 extends U_01 {
   prepare(s: string): string {
-    return (this.username = this.username.trim().toLowerCase());
+    return (s = s.trim().toLowerCase());
   }
 }
 
